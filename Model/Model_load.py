@@ -3,9 +3,9 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 import re
 import pandas as pd
 
-data = pd.read_csv('C:/Users/azwra/PycharmProjects/pythonProject/Text_gen/Model/amazon_reviews.csv')
+data = pd.read_csv('Model/amazon_reviews.csv')
 
-model = tf.keras.models.load_model('C:/Users/azwra/PycharmProjects/pythonProject/Text_gen/Model/Peter_model.h5')
+model = tf.keras.models.load_model('Model/Peter_model.h5')
 
 
 def preprocess(text):
